@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Coste minimo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="C:\Apache24\htdocs\PHPfiles\images\mikuu.ico">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="C:\Apache24\htdocs\PHPfiles\images\Komi.jpg">
+        </div>
+        <div class="menu">
+            <button>Opcion 1</button>
+            <button>Opcion 2</button>
+            <button>Opcion 3</button>
+        </div>
+    </nav>
+
+    <div class="aboveNav">
+        <div class="center">
+            <div class="fr">
+                <table id="tabla-in">
+                    <thead>
+                        <tr>
+                            <th>Oferta/Demanda</th>
+                            <th><input class="demanda" type="number" placeholder="0.0"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input class="oferta" type="number" placeholder="0.0"></td>
+                            <td><input class="celda" type="number" placeholder="0.0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <button onclick="DemandaMenos()"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                    <button onclick="DemandaMas()"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                </div>
+            </div>
+            <div class="sr">
+                <button onclick="OfertaMenos()"><i class="bi bi-arrow-up-circle-fill"></i></button>
+                <button onclick="OfertaMas()"><i class="bi bi-arrow-down-circle-fill"></i></button>
+            </div>
+        </div>
+    
+        <button id="hde" class="coste" onclick="calcularCoste()">Calcular Coste</button>
+    
+        <div class="warning">
+            <span></span>
+        </div>
+
+        <div class="answer">
+            <div class="principal">
+                <h3>Resultados:</h3>
+            </div>
+            <div class="cantidad">
+                <!-- <div class="results">
+                    <h4>Resultados Tabla 1</h4>
+                    <div class="result">
+                        <span>El resultado es : ...................</span>
+                    </div>
+                    <div class="result">
+                        <span>El resultado es : ...................</span>
+                    </div>
+                </div>
+                <div class="results">
+                    <h4>Resultados Tabla 2</h4>
+                    <div class="result">
+                        <span>El resultado es : ...................</span>
+                    </div>
+                    <div class="result">
+                        <span>El resultado es : ...................</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    
+
+<script src="main.js"></script>
+</body>
+</html>
