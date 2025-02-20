@@ -25,7 +25,7 @@ function DemandaMenos(){
         ths[ths.length-1].remove();
 
         let trs = tbody.children;
-        for(let tr in trs){
+        for(let tr=0;tr<trs.length;tr++){
             tds = trs[tr].children;  // Acceder a los tds
             tds[tds.length-1].remove();
         }
@@ -173,6 +173,10 @@ function calcularCoste(){
         aviso.style.backgroundColor = '#e74c3c';
         mensaje.textContent = "La oferta y demanda deben de ser la misma";
         aviso.style.display = 'flex';
+
+        demanda = [];
+        oferta = [];
+        list = [];
 
         setTimeout(()=>{
             aviso.style.display = 'none';
