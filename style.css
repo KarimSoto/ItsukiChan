@@ -48,9 +48,11 @@ nav > .menu{
 
 }
 
-nav > .menu > button{
+nav > .menu > a{
+    display: inline-block;
     position: relative;
     padding: 10px;
+    text-decoration: none;
     background-color: transparent;
     color: white;
     border: none;
@@ -58,7 +60,7 @@ nav > .menu > button{
     font-size: 18px;
 }
 
-nav > .menu > button:hover{
+nav > .menu > a:hover{
     cursor: pointer;
     border-bottom: 2px solid white;
 }
